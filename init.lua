@@ -35,3 +35,4 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
